@@ -1,0 +1,13 @@
+<!-- filepath: /Users/asahin/Documents/GitHub/Django-Firm/product/templates/product/products.html -->
+{% extends 'core_base/base.html' %}
+
+{% block title %} {{ page_title }} | {% endblock title %}
+
+{% block container %}
+<div class="row row-cols-sm-3 my-3">
+  {% for item in products %}
+  {% include 'product/components/card.html' with title=item.title detail=item.detail img_url=item.url url=item.id %}
+  {% endfor %}
+</div>
+
+{% endblock container %}

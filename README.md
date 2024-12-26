@@ -1,0 +1,3 @@
+- Make sure that docker app is running
+- Paste this to terminal and run "docker compose up --build"
+- Search http://localhost:8000/ on browser

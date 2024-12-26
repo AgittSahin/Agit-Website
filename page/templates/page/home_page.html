@@ -1,0 +1,62 @@
+{% extends 'core_base/base.html' %}
+{% block title %}{{page_title}} {% endblock title %}
+{% block container-fluid %}
+
+{% include 'page/components/home_carousel.html' with fake_db_carousel=carousel %}
+
+      <!-- HERO CONTENT -->
+      {% include 'page/components/hero_component.html' with hero_title="Welcome to my website !!!" %}
+        <div class="row bg-dark">
+          <div class="col-sm-6 ms-0 ps-0 d-flex align-items-stretch">
+            <img src="https://picsum.photos/id/234/600/250" alt="" class="w-100">
+          </div>
+          <!-- ABOUT US -->
+          <div class="col-sm-6 text-light text-center align-self-center">
+            <h2 class="">About me</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fugiat.</p>
+              <p>Cupiditate animi nobis natus quo labore aliquid possimus quisquam cum.</p>
+              <p>Dignissimos, ducimus provident! Rerum, modi possimus vero doloribus qui odio?</p>
+            </div>
+        </div>
+          <!-- ABOUT US END-->
+      <!-- HERO CONTENT END -->
+      {% endblock container-fluid %}
+      <!-- PRODUCTS -->
+      {% block container %}
+        <div class="row bg">
+          <div class="col-sm-12">
+            <h2 class="my-3">Products</h2>
+            <hr>
+          </div>
+          <div class="col-sm-4 mb-2">
+            <di-flv class="card" ">
+              <img class="card-img-top" src="https://picsum.photos/id/65/400/250" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Some quick example text to build on the Project 1 and make up the bulk of the card's container.</p>
+                <a href="#" class="btn btn-primary">Check out</a>
+              </div>
+            </di-flv>
+          </div>
+          <div class="col-sm-4 mb-2">
+            <di-flv class="card" ">
+              <img class="card-img-top" src="https://picsum.photos/id/66/400/250" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Check out</a>
+              </div>
+            </di-flv>
+          </div>
+          <div class="col-sm-4 mb-2">
+            <div class="card" ">
+              <img class="card-img-top" src="https://picsum.photos/id/67/400/250" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Check out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+{% endblock container %}
